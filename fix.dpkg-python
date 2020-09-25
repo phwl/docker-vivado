@@ -1,0 +1,30 @@
+
+Package: python
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 624
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: allowed
+Source: python-defaults
+Version: 2.7.15~rc1-1
+Replaces: python-dev (<< 2.6.5-2)
+Provides: python-ctypes, python-email, python-importlib, python-profiler, python-wsgiref
+Depends: python2.7 (>= 2.7.15~rc1-1~), libpython-stdlib (= 2.7.15~rc1-1)
+Pre-Depends: python-minimal (= 2.7.15~rc1-1)
+Suggests: python-doc (= 2.7.15~rc1-1), python-tk (>= 2.7.15~rc1-1~)
+Breaks: update-manager-core (<< 0.200.5-2)
+Conflicts: python-central (<< 0.5.5)
+Description: interactive high-level object-oriented language (default version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://www.python.org/
+Cnf-Extra-Commands: python
+Cnf-Priority-Bonus: 3
+

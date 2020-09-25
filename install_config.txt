@@ -5,6 +5,7 @@ Edition=Vitis Unified Software Platform
 Destination=/tools/Xilinx
 
 # Choose the Products/Devices the you would like to install.
+# Modules=Virtex UltraScale+ HBM:1,Zynq UltraScale+ MPSoC:1,DocNav:1,Kintex UltraScale:1,Zynq-7000:1,System Generator for DSP:0,Virtex UltraScale+:1,Kintex UltraScale+:1,Model Composer:0
 Modules=Zynq UltraScale+ MPSoC:1,DocNav:1,Zynq-7000:1,System Generator for DSP:0,Model Composer:0
 
 # Choose the post install scripts you'd like to run as part of the finalization step. Please note that some of these scripts may require user interaction during runtime.
