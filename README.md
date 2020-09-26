@@ -1,5 +1,6 @@
 # docker-ubuntu-vivado
-This is modified from https://github.com/laysakura/docker-ubuntu-vivado which supported 2019.2 only.
+Dockerfile to create a Vivado 2020.1 installation under Ubuntu
+Modified from https://github.com/laysakura/docker-ubuntu-vivado which supported 2019.2 only.
 
 
 To build:
