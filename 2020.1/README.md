@@ -6,10 +6,10 @@ Modified from the 2019.2 version from <https://github.com/laysakura/docker-ubunt
 To build:
 
 ```bash
-docker image build -t ubuntu-vivado .
+docker image build -t vivado-2020.1 .
 ```
 
 To run:
 ```bash
-docker run -e DISPLAY=`hostname`:0 -it --rm -v $PWD:/home/user/work -w /home/user ubuntu-vivado
+docker run -e DISPLAY=`hostname`:0 -it --rm -v $PWD:/home/phwl/work -w /home/phwl vivado-2020.1
 ```
