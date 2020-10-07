@@ -1,25 +1,19 @@
-基本は https://blog.myon.info/entry/2018/09/15/install-xilinx-tools-into-docker-container/ に書いてあるものの丸パクリ。
-
-## ビルド
-
-`Xilinx_Vivado_2019.2_1106_2127.tar.gz` はXilinx社のwebページから（ライセンスなど同意したり個人情報を入力して）ダウンロードし、このリポジトリのディレクトリに配置する。
+## Create image
+Download 
+`Xilinx_Vivado_2019.2_1106_2127.tar.gz` from Xilinx and
 
 ```bash
-docker image build -t laysakura/ubuntu-vivado .
+docker image build -t vivado-2020.1 .
 ```
 
-## 走らせる
+## Setup
 
-macOSから使うときは、XQuartuzのターミナルで
+On macOS with XQuartz
 
 ```bash
 xhost + 127.0.0.1
 ```
 
-をしてから
-
 ```bash
-docker run -e DISPLAY=docker.for.mac.localhost:0 -e USER_ID=$UID -it --rm -v $PWD:/home/user/work -w /home/user laysakura/ubuntu-vivado
+docker run -e DISPLAY=`hostname`:0 -it --rm -v $PWD:/home/phwl/work -w /home/phwl vivado-2019.2
 ```
-
-すること。
